@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок кнопка</title>
+    <style>
+        body {
+            background-color: #2f2b2b;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 70%;
+        }
+        
+        .btn {
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(237, 219, 219);
+            background: linear-gradient(45deg, #70051e, #a43521);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(255, 65, 108, 0.4);
+            transition: all 0.3s ease;
+            text-align: left;
+            padding: 12px 20px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 65, 108, 0.6);
+            background: linear-gradient(45deg, #ff4b2b, #ff416c);
+        }
+        
+        .btn:active {
+            transform: scale(0.97);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn" onclick="window.open('htmlc.pdf', '_blank')">
+            HTMLге киришүү (Веб-баракчалардын түзүмүн, семантикалык тегдерди жана HTML5тин заманбап стандарттарын изилдөө)
+        </button>
+
+        <button class="btn" onclick="window.open('css.pdf', '_blank')">
+            CSS стилдери (Кооз дизайндарды, анимацияларды жана адаптивдүү вёрстканы түзүү)
+        </button>
+
+        <button class="btn" onclick="window.open('file:///C:/Users/Администратор/Desktop/my%20frontend/element.pdf','_blank')">
+            JavaScript (ВЕБ-программалоо тилине киришүү)
+        </button>
+        <button class="btn" onclick="window.open('file:///C:/Users/Администратор/Desktop/my%20frontend/element.pdf','_blank')">
+             Хостинг GitHub
+        </button>
+        <button class="btn" onclick="window.history.back()">
+            Башкы бетке
+        </button>
+    </div>
+</body>
+
+</html>
